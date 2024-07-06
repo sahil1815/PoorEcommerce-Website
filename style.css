@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background-color: #fefefe;
+}
+section header{
+    width: 100%;
+    display: flex;
+}
+section header h1{
+    margin-left: 90px;
+    margin-top: 45px;
+    font-size: 35px;
+}
+section header h1 .hp{
+    padding: 5px;
+    color: rgb(255, 56, 56);
+}
+section header .sbox{
+    width: 160px;
+    height: 45px;
+    position: fixed; 
+    right: 70px;
+    top: 50px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+	box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+	box-sizing: border-box;
+    z-index: 1;
+    border:1px solid rgba(167, 158, 245, 0.1);
+}
+section header .sbox .search{
+    font-family: sans-serif;
+    font-size: 17px;
+    opacity: 0.8;
+    width: 90px;
+    height: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-right: 25px;
+    padding: 0 10px; 
+}
+section header .sbox .search::placeholder{
+	color: #1D1D1D;
+	font-weight:400;
+	letter-spacing: 2px;
+	font-size: 0.8rem;
+	font-family: poppins;
+}
+section header .sbox i{
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+section .main img{
+   position: absolute;
+   width: 500px;
+   left: 15%;
+   top: 50%;
+   transform: translate(-15%, -50%);
+}
+section .main .p{
+   position: absolute;
+   background-color: transparent;
+   left: 68%;
+   top: 50%;
+   transform: translate(-22%, -50%);
+   font-size: 2.7rem;
+   font-weight: bold;
+   margin: 0px;
+   line-height: 65px;
+   text-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+   letter-spacing: 3px;
+   color:#31313b;
+}
+section .main .p h1{
+    letter-spacing: 30px;
+}
+section .main .p h1, h2{
+    font-family: roboto;
+    background-color: transparent;
+}
+span{
+    color:	#6c64ff;
+    background-color: transparent;
+}
+section .main .p .pbtn{
+    transform: translate(3%, -15%);
+    width: 165px;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10% 10% 10% 10%/50% 50% 50% 50%;
+    border: none;
+}
+section .main .p .pbtn:hover{
+    transition-duration: 0.5s;
+    background-color: #6c64ff;
+}
+section .main .sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 2%;
+    top: 50%;
+    font-size: 19px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #fff;
+    height: 90px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    padding: 75px 5px;
+    z-index: 1;
+}
+section .main .sidebar a{
+    text-decoration: none;
+    padding: 20px 10px;
+    background-color: transparent;
+}
+section .main .sidebar a i{
+	color:rgba(39,39,39,0.80);
+}
+.sidebar a:hover .fa-facebook-f{
+	color: #2e5dc1;
+}
+.sidebar a:hover .fa-twitter{
+	color: #00acee ;
+}
+.sidebar a:hover .fa-instagram{
+	color:  #f1364f ;
+}
+.sidebar a:hover .fa-youtube{
+	color: 	#FF0000;
+}
+.productPart{
+    margin-top:42%;
+    margin-left: 100px;
+    width: 85%;
+    background-color: #fff;;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.18);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+.productPart h3{
+    position: absolute;
+    margin-left: 39%;
+    font-size: 2rem;
+    font-family: myriad pro;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2.5px;
+    color: #262832;
+}
+h3 .bag{
+    color: #5b53e8;
+}
+.productPart .products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    width: 100%; 
+}
+.product{
+    padding: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    width: 240px;
+}
+.product:hover{
+    background-color: #fff;;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, .3);
+    border-radius: 30px;
+}
+.productPart .products .product img{
+    padding: 50px;
+    margin-left: -20px;
+    margin-top: 10%;
+    width: 180px;
+}
+.productPart .products .product .price, p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+    padding: 10px;
+}
+.productPart .products .product .price{
+    margin-left: 37%;
+    text-decoration: none;
+    margin-top: -20px;
+    color: #1D1D1D;
+}
+.productPart .products .product p{
+    margin-left: 15%;
+    margin-top: -58px;
+    color: #4d4d4d70;
+    font-family: myriad pro;
+    font-size: .9rem;
+}
+.products .product .sell, .sell a{
+    color: transparent;
+    background-color: transparent;
+    border: none; 
+}
+.product:hover > .sell a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    font-family: poppins;
+    font-size: 17px;
+    padding: 10px 30px;
+    word-spacing: 2px;
+    margin-top: 15px;
+    justify-content: center;
+    margin-left: 3.8%;
+}
+.about{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 85%;
+    background-color: #fff;;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.18);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.about .aboutBox{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about .aboutBox h1{
+    color: #333;
+    font-weight: 700;
+    margin-top: -40px;
+    font-size: 3rem;
+    margin-left: -180px;
+    margin-bottom: 15px;
+}
+.about .aboutBox h4{
+    color: #333;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-right: 100px;
+    margin-bottom: 10px;
+       
+}
+.about .aboutBox p{
+    margin-left: -180px;
+    width: 75%;
+    color: #c3c1c1;
+}
+.about .aboutBox img{
+    width: 130%;
+    height: 100%;
+    margin-top: 0px;
+    object-fit: contain;
+    margin-right: 150px;
+}
+
+.notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+}
+.notification h1{
+    font-size: 2rem;
+    color: rgb(56, 56, 56);
+}
+.notification .inputSection{
+    margin-top: 30px;
+    box-shadow: 2px 5px 30px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    border-radius: 7%/50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.notification .inputSection input{
+    border: none;
+    outline: none; 
+    margin-left: 5%;
+    font-size: 1.2rem;
+    width: 65%; 
+    background-color: transparent;
+}
+.notification .inputSection a{
+    align-self: center;
+    margin-right: 5%;
+}
+.notification .inputSection button{
+    
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #202020;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+.notification .inputSection button:hover{
+    background-color: #5b53e8;
+    transition: all ease 0.5s;
+}
+footer{
+    background-color: rgb(10, 10, 10);
+    padding: 5px;
+}
+footer p{
+    background: transparent;
+    color: #f3f2f3f2;
+    align-self: center;
+    font-size: 1.15rem;
+}
+
+@media (max-width: 760px) {
+    
+    .main {
+        height: 400px;
+    }
+    section .main .p{
+        margin-left: -180px;
+    }
+    .productPart{
+        
+        margin-left: 25px;
+    }
+    .productPart h3{
+        margin-left: 100px;
+    }
+    button{
+        margin-left: 28px;
+    }
+    .about{
+        position: relative;
+        margin-bottom: -170px;
+        right: 70px;
+    }
+    .about .aboutBox h1{
+        margin-left: 0px;
+    }
+    .about .aboutBox img{
+        margin-top: 100px;
+    }
+    footer p{
+        margin-left: 140px;
+    }
+}
